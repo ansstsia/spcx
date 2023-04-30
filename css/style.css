@@ -1,0 +1,235 @@
+body {
+    background: #010001;
+    margin: 0;
+    padding-top: 53px;
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+}
+body::-webkit-scrollbar {
+    width: 0px;
+}
+.header {
+   max-width: 1230px;
+   margin: auto;
+   width: 90%;
+   display: flex;
+   justify-content: space-between;
+}
+.list {
+   margin: 0;
+   padding: 0;
+   display: flex;
+   list-style: none; 
+}
+.item-link {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 12px;
+    line-height: 14px;
+}
+.secondary-nav .item-link {
+    color: #808080;
+}
+.itemy {
+    transition: text 1s;
+}
+.itemy:hover {
+    text-decoration: underline;
+    text-decoration-color:#808080;
+}
+.item {
+    transition: 1s;
+}
+.item:hover {
+    text-decoration: underline;
+    text-decoration-color: #FFFFFF;
+}
+.main {
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 32px;    
+}
+.title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 75px;
+    margin-bottom: 26px;
+    margin-top: 0;
+}
+.description {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 140%;
+    max-width: 268px;
+    margin: auto;
+}
+.description::after {
+    content:"";
+    display: block;
+    width: 1px;
+    height: 60px;
+    background-color: #FFFFFF;
+    margin: auto;
+    margin-top: 26px;
+}
+.earth {
+        background: url("img2.svg");
+        max-width: 1230px;
+        width: 90%;
+        margin: auto;
+        height: 750px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+}
+.features {
+  max-width: 1230px;
+  width: 90%;
+  margin: auto;
+  padding: 100px 0;
+  position: relative;
+}
+.features-title {
+font-weight: 700;
+font-size: 24px;
+line-height: 140%;
+text-transform: uppercase;
+margin-bottom: 45px;
+}
+.overview {
+    margin-top: 410px;
+}
+.table {
+margin-bottom: 218px;    
+}
+.table-column {
+width: 300px;
+padding-top: 7px;
+padding-bottom: 7px; 
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 179.69%;  
+}
+.features-text {
+max-width: 490px;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 29px;    
+}
+.rocket {
+    position: absolute;
+    top: -65px;
+    right: 150px;
+    height: 1718px;
+    max-width: 300px;
+}
+.footer {
+padding: 130px 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 300px;    
+}
+.footer-nav .item-link {
+font-size: 18px;
+line-height: 21px;
+}
+.footer .logo {
+    margin-bottom: 43px;
+}
+.footer-nav {
+margin-bottom: 28px;    
+}
+.footer-text {
+font-size: 18px;
+line-height: 21px;
+color:#808080;
+text-decoration:none;
+margin-top: 0;   
+}
+.footer-link {
+color:#808080;
+text-decoration:none;     
+}
+.button {
+    color:#FFFFFF;
+    min-width: 260px;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 6px;
+    text-decoration: none; 
+    transition: 1s;
+}
+.button:hover {
+    background-color: #FFFFFF;
+    color: #010001;
+}
+
+@media (max-width: 1070px) {
+    .rocket {
+        max-width: 250px;
+        position: absolute;
+        top: -65px;
+        right: 0px;
+        height: 1718px;
+    }
+    .table-column {
+        width: 200px;
+    }
+    .features-text {
+        max-width: 450px;
+    }
+}
+@media (max-width: 650px) {
+    .rocket {
+        position: relative;
+    }
+    header {
+        flex-direction: column;
+        align-items: center;    
+        }
+        header .logo {
+        margin-bottom: 20px;    
+        }
+        header .main-nav {
+        margin-bottom: 20px;    
+        }
+        table {
+            margin-bottom: 20px;
+        }
+        .overview {
+            text-align: center;
+            padding: 0;
+            margin-top: -200px;
+        }
+        .footer {
+            margin-top: 70px;
+            padding: 30px;
+        }
+        .features-title {
+            margin-top: 150px;
+        }
+        .earth {
+            background-size: 840px 1200px;
+            margin-top: -100px;
+        }
+        .footer-nav .list {
+            flex-wrap:wrap;
+            align-items: center;
+            justify-content: center;
+        }
+        .footer-nav .item {
+            margin-bottom: 15px;
+        }
+        .footer {
+            text-align: center;
+        } 
+}
